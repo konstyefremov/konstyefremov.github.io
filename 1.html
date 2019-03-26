@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Notes</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>python packages</h2>
+      <p>A package in Python is a program which you can use by itself, or which you can reuse in your project.
+        There are lots of packages for different purposes. To perform mathematical operations, to work with databases, to built websites etc.
+        You can even find a <a href="https://ytdl-org.github.io/youtube-dl/index.html">package</a> which downloads videos from Youtube.
+      <p>Noncomplete list of packages can be found at <a href="https://pypi.org/">The Python Package Index</a>.
+        At the moment (March 2019) there are 173,483 projects listed on the website. So, it's obvious why Python comes pre-installed with only the most essential packages.
+      </p>
+      <h2>pip</h2>
+      <p>
+        Python comes with a command line utility <code>pip</code> to manage packages. With it you can see which packages are available on your system, install new ones, remove not needed anymore.
+      </p>
+      <ul>
+        <li>To install a package.
+        Open a command line and write <code>pip install &lt;package-name&gt;</code>. For example, a command
+        <code>pip install flask</code> will install the latest version of Flask. You also can install a specific version of package. For example, a command <code>pip install flask==0.12.4</code>
+        will install Flask version 0.12.4.
+        </li>
+        <li>
+          To see which packages are available on your system, write <code>pip list</code>
+        </li>
+        <li>
+          To remove a package, write <code>pip remove &lt;package-name&gt;</code>
+        </li>
+      </ul>
+      <h2>virtual environments</h2>
+      <p>
+        Most of the programmers build and maintain many projects. At the same time packages evolve. They remove some features, add anothers.
+      </p>
+      <p>
+        Now imagine (a typical) situation. A programmer built a project and shipped it to the client 2 years ago with some package.
+        Since then, this package changed and his project became incompatible with the new version of the package.
+        One day the client calls and asks to fix some problem with the project. If the programmer will install a new version of the package, he will need to do lots of work to
+        make the project compatible with the new version of the package. But he needs to fix only some small problem.
+        If he will install two versions of this package on his computer, the new will override the old one.
+      </p>
+      <p>
+        For this problem (and some others), python provides a tool called <strong>virtual environment</strong> or <strong>venv</strong>.
+        With this tool (actually a package) you can create separate environments for each project and support them independently from each other.
+      </p>
+      <p>
+        To get started, you will need:
+      </p>
+      <ul>
+        <li>install virtual environment package on your computer <code>pip install virtualenv</code></li>
+        <li>install the package to make it easier to work with on Windows <code>pip install virtualenvwrapper-win</code></li>
+        <li>
+          create a new virtual environment, write <code>mkvirtualenv &lt;folder name&gt;</code><br />
+          This command will copy python executables to the folder and enter the new environment.
+          You will see the name of environment in brackets before the name of the current folder.
+        </li>
+        <li>
+          to activate the environment write <code>&lt;folder-name&gt;\Scripts\activate.bat</code>
+        </li>
+        <li>
+          to deactivate write <code>deactivate</code>
+        </li>
+      </ul>
+      <h2>flask</h2>
+      <p>Flask is a framework for building web applications</p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
