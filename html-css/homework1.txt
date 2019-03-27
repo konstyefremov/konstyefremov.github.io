@@ -1,0 +1,24 @@
+Homework
+
+Make a page about your home city.
+Copy information from online.
+On top of the page should be a table of contents.
+Table of contents should be ordered list Verdana 12px.
+paragraphs on the page should be Times New Roman 14pxe
+
+Sections of the page:
+
+History
+Economics
+Population
+Festivals
+
+Each section should be h2 and should be Verdana 18px
+
+Styling is allowed only with Css
+On the page are allowed following tags:
+p, ul, ol, li, h2
+and following attributes:
+id, class
+
+everything else is not allowed
